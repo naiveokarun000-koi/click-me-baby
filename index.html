@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Letter for Akira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="scrapbook">
+
+    <!-- Background artwork -->
+    <div class="background-art art-top-left"></div>
+    <div class="background-art art-bottom-right"></div>
+    <div class="background-leaf leaf-left"></div>
+    <div class="background-leaf leaf-right"></div>
+
+    <!-- Cover -->
+    <section class="cover" id="cover">
+
+        <div class="cover-top">
+            <span>PERSONAL CORRESPONDENCE</span>
+            <span>VOL. 01 / 2026</span>
+        </div>
+
+        <div class="cover-main">
+
+            <div class="cover-intro">
+                <p class="eyebrow">A LETTER FOR YOU</p>
+
+                <h1>Dear Akira,</h1>
+
+                <p class="intro">
+                    There are a few things I've been meaning to tell you.
+                    So, I put them here.
+                </p>
+            </div>
+
+            <div class="cover-artwork">
+
+                <div class="paper-layer paper-layer-back"></div>
+                <div class="paper-layer paper-layer-front">
+
+                    <div class="postmark">
+                        <span>MANILA</span>
+                        <span>20 · XI · 26</span>
+                    </div>
+
+                    <div class="letter-illustration">
+                        <div class="illustration-stem stem-one"></div>
+                        <div class="illustration-stem stem-two"></div>
+                        <div class="illustration-flower flower-one"></div>
+                        <div class="illustration-flower flower-two"></div>
+                        <div class="illustration-leaf leaf-one"></div>
+                        <div class="illustration-leaf leaf-two"></div>
+                    </div>
+
+                    <div class="paper-caption">
+                        A note worth keeping
+                    </div>
+
+                </div>
+
+                <div class="cover-washi"></div>
+            </div>
+
+            <div class="cover-bottom">
+
+                <button id="openBtn">
+                    Read my letter
+                    <span>→</span>
+                </button>
+
+                <p>Take your time. There's no rush.</p>
+
+            </div>
+
+        </div>
+
+        <div class="cover-footer">
+            <span>AN UNFINISHED COLLECTION</span>
+            <span>01 — 04</span>
+        </div>
+
+    </section>
+
+
+    <!-- Letter -->
+    <section class="letter-section hidden" id="letterSection">
+
+        <div class="letter-heading">
+            <div class="chapter-top">
+                <span class="chapter-label" id="chapterLabel">
+                    A LITTLE SOMETHING · 01
+                </span>
+
+                <span class="page-number" id="pageNumber">
+                    01 / 04
+                </span>
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <article class="letter-paper">
+
+            <div class="paper-decoration paper-decoration-top"></div>
+
+            <div class="paper-content" id="chapterContent"></div>
+
+            <div class="paper-decoration paper-decoration-bottom"></div>
+
+            <div class="paper-tape"></div>
+
+        </article>
+
+        <div class="letter-navigation">
+
+            <button id="backBtn">← Back</button>
+
+            <span class="navigation-hint" id="navigationHint">
+                one page at a time
+            </span>
+
+            <button id="nextBtn">Continue →</button>
+
+        </div>
+
+        <div class="letter-bottom-note">
+            PRIVATE LETTER — FOR THE INTENDED READER
+        </div>
+
+    </section>
+
+
+    <!-- Ending -->
+    <section class="ending hidden" id="ending">
+
+        <div class="ending-card">
+
+            <div class="ending-illustration">
+                <div class="ending-stem"></div>
+                <div class="ending-flower"></div>
+                <div class="ending-leaf ending-leaf-one"></div>
+                <div class="ending-leaf ending-leaf-two"></div>
+            </div>
+
+            <p class="eyebrow">BEFORE YOU GO</p>
+
+            <h2>Do you miss me too?</h2>
+
+            <p class="ending-description">
+                Be honest. I promise I won't judge.
+            </p>
+
+            <div class="choices">
+
+                <button id="yesBtn">
+                    A little too much
+                </button>
+
+                <button id="noBtn">
+                    Nope.
+                </button>
+
+            </div>
+
+            <p id="answer"></p>
+
+        </div>
+
+
+        <!-- Bouquet -->
+        <div class="bouquet-reveal hidden" id="bouquetReveal">
+
+            <div class="bouquet-card">
+
+                <p class="eyebrow">A LITTLE GIFT</p>
+
+                <h2>For Akira.</h2>
+
+                <p>
+                    I have one more thing waiting for you.
+                </p>
+
+                <a
+                    class="bouquet-link"
+                    href="https://digibouquet.vercel.app/bouquet/a0e20840-d545-4c91-8c95-b3c1b04d2526"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Open your bouquet →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="bottom-decoration">
+        <span></span>
+        <p>END OF LETTER</p>
+        <span></span>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
